@@ -75,8 +75,8 @@ export default function Home() {
             <div className="relative animate-fade-in-up">
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
                 <img 
-                  src="/hero-laundromat.jpg" 
-                  alt="Modern laundromat interior with clean washing machines" 
+                  src="/interior-machines.jpg" 
+                  alt="Charles Street Laundromat interior with washing machines" 
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -121,7 +121,7 @@ export default function Home() {
                   <p className="text-sm font-semibold text-primary">$7-15 per visit</p>
                 </div>
                 <img 
-                  src="/hero-laundromat.jpg" 
+                  src="/machines-row.jpg" 
                   alt="Self-service washing machines" 
                   className="w-full h-40 object-cover rounded-lg"
                 />
@@ -142,8 +142,8 @@ export default function Home() {
                   <p className="text-sm font-semibold text-primary">$1.00 per pound</p>
                 </div>
                 <img 
-                  src="/services-washfold.jpg" 
-                  alt="Professionally folded laundry" 
+                  src="/staff-folding.jpg" 
+                  alt="Staff member folding laundry" 
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </CardContent>
@@ -163,8 +163,8 @@ export default function Home() {
                   <p className="text-sm font-semibold text-primary">$10-20 per week</p>
                 </div>
                 <img 
-                  src="/services-dropoff.jpg" 
-                  alt="Drop-off service counter" 
+                  src="/staff-customers.jpg" 
+                  alt="Friendly staff serving customers" 
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </CardContent>
@@ -184,8 +184,8 @@ export default function Home() {
                   <p className="text-sm font-semibold text-primary">Available now</p>
                 </div>
                 <img 
-                  src="/machines-large.jpg" 
-                  alt="Large capacity washing machine" 
+                  src="/machine-drum.jpg" 
+                  alt="Large capacity washing machine drum" 
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </CardContent>
@@ -277,8 +277,8 @@ export default function Home() {
 
           <div className="mt-12 bg-white rounded-2xl overflow-hidden shadow-lg border border-border">
             <img 
-              src="/location-exterior.jpg" 
-              alt="Charles Street Laundromat exterior" 
+              src="/exterior-sign.jpg" 
+              alt="Charles Street Laundromat exterior sign and building" 
               className="w-full h-64 md:h-80 object-cover"
             />
           </div>

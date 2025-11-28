@@ -123,7 +123,7 @@ export default function Home() {
                 <img 
                   src="/interior-wide.jpg" 
                   alt="Self-service washing machines" 
-                  className="w-full h-40 object-cover rounded-lg"
+                  className="w-full h-48 object-cover rounded-lg"
                 />
               </CardContent>
             </Card>
@@ -144,7 +144,7 @@ export default function Home() {
                 <img 
                   src="/folding-tables.jpg" 
                   alt="Folding tables and laundry area" 
-                  className="w-full h-40 object-cover rounded-lg"
+                  className="w-full h-48 object-cover rounded-lg"
                 />
               </CardContent>
             </Card>
@@ -165,7 +165,7 @@ export default function Home() {
                 <img 
                   src="/interior-kid.jpg" 
                   alt="Family-friendly laundromat interior" 
-                  className="w-full h-40 object-cover rounded-lg"
+                  className="w-full h-48 object-cover rounded-lg"
                 />
               </CardContent>
             </Card>
@@ -183,11 +183,6 @@ export default function Home() {
                 <div className="pt-2">
                   <p className="text-sm font-semibold text-primary">Available now</p>
                 </div>
-                <img 
-                  src="/machine-drum.jpg" 
-                  alt="Large capacity washing machine drum" 
-                  className="w-full h-40 object-cover rounded-lg"
-                />
               </CardContent>
             </Card>
 

@@ -270,13 +270,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-12 bg-white rounded-2xl overflow-hidden shadow-lg border border-border">
-            <img 
-              src="/hero-interior.jpg" 
-              alt="Charles Street Laundromat clean and welcoming interior" 
-              className="w-full h-64 md:h-80 object-cover"
-            />
-          </div>
+
         </div>
       </section>
 
@@ -415,8 +409,23 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-border">
-              <h4 className="text-2xl font-bold text-foreground mb-6">Hours of Operation</h4>
+            <div className="space-y-6">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-border">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.8947234567!2d-89.06430492345678!3d42.26110007123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8808f5c5c5c5c5c5%3A0x1234567890abcdef!2s2125%20Charles%20St%2C%20Rockford%2C%20IL%2061104!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  width="100%"
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Charles Street Laundromat Location"
+                  className="w-full"
+                />
+              </div>
+              
+              <div className="bg-white rounded-2xl shadow-xl p-8 border border-border">
+                <h4 className="text-2xl font-bold text-foreground mb-6">Hours of Operation</h4>
               <div className="space-y-3">
                 {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => (
                   <div key={day} className="flex justify-between items-center py-2 border-b border-border last:border-0">
@@ -425,10 +434,11 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="mt-6 p-4 bg-accent/20 rounded-lg">
-                <p className="text-sm text-center text-foreground">
-                  <strong>Open 7 Days a Week</strong> for your convenience
-                </p>
+                <div className="mt-6 p-4 bg-accent/20 rounded-lg">
+                  <p className="text-sm text-center text-foreground">
+                    <strong>Open 7 Days a Week</strong> for your convenience
+                  </p>
+                </div>
               </div>
             </div>
           </div>

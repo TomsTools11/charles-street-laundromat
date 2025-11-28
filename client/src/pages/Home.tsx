@@ -75,7 +75,7 @@ export default function Home() {
             <div className="relative animate-fade-in-up">
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
                 <img 
-                  src="/interior-machines.jpg" 
+                  src="/hero-interior.jpg" 
                   alt="Charles Street Laundromat interior with washing machines" 
                   className="w-full h-auto object-cover"
                 />
@@ -121,7 +121,7 @@ export default function Home() {
                   <p className="text-sm font-semibold text-primary">$7-15 per visit</p>
                 </div>
                 <img 
-                  src="/machines-row.jpg" 
+                  src="/interior-wide.jpg" 
                   alt="Self-service washing machines" 
                   className="w-full h-40 object-cover rounded-lg"
                 />
@@ -142,8 +142,8 @@ export default function Home() {
                   <p className="text-sm font-semibold text-primary">$1.00 per pound</p>
                 </div>
                 <img 
-                  src="/staff-folding.jpg" 
-                  alt="Staff member folding laundry" 
+                  src="/folding-tables.jpg" 
+                  alt="Folding tables and laundry area" 
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </CardContent>
@@ -163,8 +163,8 @@ export default function Home() {
                   <p className="text-sm font-semibold text-primary">$10-20 per week</p>
                 </div>
                 <img 
-                  src="/staff-customers.jpg" 
-                  alt="Friendly staff serving customers" 
+                  src="/interior-kid.jpg" 
+                  alt="Family-friendly laundromat interior" 
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </CardContent>
@@ -277,8 +277,8 @@ export default function Home() {
 
           <div className="mt-12 bg-white rounded-2xl overflow-hidden shadow-lg border border-border">
             <img 
-              src="/exterior-sign.jpg" 
-              alt="Charles Street Laundromat exterior sign and building" 
+              src="/hero-interior.jpg" 
+              alt="Charles Street Laundromat clean and welcoming interior" 
               className="w-full h-64 md:h-80 object-cover"
             />
           </div>

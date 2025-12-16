@@ -43,7 +43,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold">
-                Serving Rockford Since 2018
+                Serving Rockford Since 1993
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Your Neighborhood Laundry Experts
@@ -117,9 +117,6 @@ export default function Home() {
                 <p className="text-muted-foreground">
                   Modern coin-operated washers and dryers in single, double, and triple-load sizes. Perfect for quick and affordable laundry.
                 </p>
-                <div className="pt-2">
-                  <p className="text-sm font-semibold text-primary">$7-15 per visit</p>
-                </div>
                 <img 
                   src="/interior-wide.jpg" 
                   alt="Self-service washing machines" 
@@ -138,9 +135,6 @@ export default function Home() {
                 <p className="text-muted-foreground">
                   Let our professional staff handle your laundry. We wash, dry, and fold your clothes with care. Hangers available upon request.
                 </p>
-                <div className="pt-2">
-                  <p className="text-sm font-semibold text-primary">$1.00 per pound</p>
-                </div>
                 <img 
                   src="/folding-tables.jpg" 
                   alt="Folding tables and laundry area" 
@@ -159,9 +153,6 @@ export default function Home() {
                 <p className="text-muted-foreground">
                   Convenient drop-off and pick-up service for busy schedules. Drop off your laundry and pick it up fresh and clean.
                 </p>
-                <div className="pt-2">
-                  <p className="text-sm font-semibold text-primary">$10-20 per week</p>
-                </div>
                 <img 
                   src="/interior-kid.jpg" 
                   alt="Family-friendly laundromat interior" 
@@ -218,6 +209,65 @@ export default function Home() {
                       <p className="font-semibold text-foreground">Clean & Well-Maintained</p>
                       <p className="text-sm text-muted-foreground">Vending machines and bathroom facilities</p>
                     </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-16 md:py-24 bg-background">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Pricing</h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Affordable rates for all your laundry needs
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <Card className="border-2">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="flex items-center justify-between pb-4 border-b border-border">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-primary/10 p-3 rounded-lg">
+                        <DollarSign className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-foreground">Average cost per visit</p>
+                        <p className="text-sm text-muted-foreground">Self-service laundry</p>
+                      </div>
+                    </div>
+                    <p className="text-2xl font-bold text-primary">$5 - $20</p>
+                  </div>
+
+                  <div className="flex items-center justify-between pb-4 border-b border-border">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-primary/10 p-3 rounded-lg">
+                        <Package className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-foreground">Cost per pound</p>
+                        <p className="text-sm text-muted-foreground">Wash & fold service</p>
+                      </div>
+                    </div>
+                    <p className="text-2xl font-bold text-primary">$1.50</p>
+                  </div>
+
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-primary/10 p-3 rounded-lg">
+                        <Clock className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-foreground">Drop off pricing</p>
+                        <p className="text-sm text-muted-foreground">Convenient drop-off service</p>
+                      </div>
+                    </div>
+                    <p className="text-2xl font-bold text-primary">$15 - $30</p>
                   </div>
                 </div>
               </CardContent>
@@ -394,7 +444,7 @@ export default function Home() {
                   <div>
                     <p className="font-semibold text-foreground">Hours</p>
                     <p className="text-muted-foreground">Monday - Sunday</p>
-                    <p className="text-muted-foreground">7:00 AM - 8:00 PM</p>
+                    <p className="text-muted-foreground">7:00 AM - 8:00 PM (Last wash at 8pm)</p>
                   </div>
                 </div>
               </div>
@@ -430,13 +480,16 @@ export default function Home() {
                 {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => (
                   <div key={day} className="flex justify-between items-center py-2 border-b border-border last:border-0">
                     <span className="font-medium text-foreground">{day}</span>
-                    <span className="text-muted-foreground">7:00 AM - 8:00 PM</span>
+                    <span className="text-muted-foreground">7:00 AM - 8:00 PM (Last wash at 8pm)</span>
                   </div>
                 ))}
               </div>
                 <div className="mt-6 p-4 bg-accent/20 rounded-lg">
                   <p className="text-sm text-center text-foreground">
                     <strong>Open 7 Days a Week</strong> for your convenience
+                  </p>
+                  <p className="text-xs text-center text-muted-foreground mt-2">
+                    We don't close at 8pm unless no one is here. We wait until customers are done, but no later than 9:30pm.
                   </p>
                 </div>
               </div>
@@ -455,7 +508,7 @@ export default function Home() {
                 <h5 className="text-lg font-bold">Charles Street Laundromat</h5>
               </div>
               <p className="text-sm opacity-80">
-                Your trusted neighborhood laundromat in Rockford, IL. Serving the community with quality laundry services since 2018.
+                Your trusted neighborhood laundromat in Rockford, IL. Serving the community with quality laundry services since 1993.
               </p>
             </div>
 
@@ -475,7 +528,7 @@ export default function Home() {
                 <li>2125 Charles St, Rockford, IL 61104</li>
                 <li><a href="tel:8153982677" className="hover:opacity-100 transition-opacity">(815) 398-2677</a></li>
                 <li><a href="mailto:charlesstshoerep@att.net" className="hover:opacity-100 transition-opacity">charlesstshoerep@att.net</a></li>
-                <li>Open Daily: 7:00 AM - 8:00 PM</li>
+                <li>Open Daily: 7:00 AM - 8:00 PM (Last wash at 8pm)</li>
               </ul>
             </div>
           </div>

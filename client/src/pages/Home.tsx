@@ -267,7 +267,7 @@ export default function Home() {
                         <p className="text-sm text-muted-foreground">Convenient drop-off service</p>
                       </div>
                     </div>
-                    <p className="text-2xl font-bold text-primary">$15 - $30</p>
+                    <p className="text-2xl font-bold text-primary">Starting at $15</p>
                   </div>
                 </div>
               </CardContent>
@@ -444,7 +444,8 @@ export default function Home() {
                   <div>
                     <p className="font-semibold text-foreground">Hours</p>
                     <p className="text-muted-foreground">Monday - Sunday</p>
-                    <p className="text-muted-foreground">7:00 AM - 8:00 PM (Last wash at 8pm)</p>
+                    <p className="text-muted-foreground">7:00 AM - 8:00 PM</p>
+                    <p className="text-sm text-muted-foreground">Last wash at 8pm</p>
                   </div>
                 </div>
               </div>
@@ -475,12 +476,13 @@ export default function Home() {
               </div>
               
               <div className="bg-white rounded-2xl shadow-xl p-8 border border-border">
-                <h4 className="text-2xl font-bold text-foreground mb-6">Hours of Operation</h4>
+                <h4 className="text-2xl font-bold text-foreground mb-2">Hours of Operation</h4>
+                <p className="text-sm text-muted-foreground mb-6">Last wash at 8pm</p>
               <div className="space-y-3">
                 {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => (
                   <div key={day} className="flex justify-between items-center py-2 border-b border-border last:border-0">
                     <span className="font-medium text-foreground">{day}</span>
-                    <span className="text-muted-foreground">7:00 AM - 8:00 PM (Last wash at 8pm)</span>
+                    <span className="text-muted-foreground">7:00 AM - 8:00 PM</span>
                   </div>
                 ))}
               </div>
@@ -489,7 +491,7 @@ export default function Home() {
                     <strong>Open 7 Days a Week</strong> for your convenience
                   </p>
                   <p className="text-xs text-center text-muted-foreground mt-2">
-                    We don't close at 8pm unless no one is here. We wait until customers are done, but no later than 9:30pm.
+                    We don't close at 8pm unless no one is here. We wait until customers are done.
                   </p>
                 </div>
               </div>
@@ -528,7 +530,8 @@ export default function Home() {
                 <li>2125 Charles St, Rockford, IL 61104</li>
                 <li><a href="tel:8153982677" className="hover:opacity-100 transition-opacity">(815) 398-2677</a></li>
                 <li><a href="mailto:charlesstshoerep@att.net" className="hover:opacity-100 transition-opacity">charlesstshoerep@att.net</a></li>
-                <li>Open Daily: 7:00 AM - 8:00 PM (Last wash at 8pm)</li>
+                <li>Open Daily: 7:00 AM - 8:00 PM</li>
+                <li className="text-xs">Last wash at 8pm</li>
               </ul>
             </div>
           </div>
